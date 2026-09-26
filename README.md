@@ -1,4 +1,4 @@
-## LAB03 LAN Jerárquica Tradicional Conmutada - OSPF, HSRP, LACP, RAPID PVST 
+## LAB03 LAN Jerárquica Tradicional Conmutada
 
 # Tecnologías: Inter-Vlan Routing, FHRP: HSRP, Dynamic Routing: OSPF, Rapid PVST, Etherchannel 
 # Herramientas: Vmware, Eve-NG, Wireshark, Microsoft Visio, Visual Studio Code
