@@ -1,13 +1,13 @@
-## LAB03 LAN Jerárquica Tradicional Conmutada - Routing & Switching  
+## LAB03 LAN Jerárquica Tradicional Conmutada - OSPF, HSRP, LACP, RAPID PVST 
 
-# Tecnologías: Inter-Vlan Routing, FHRP: HSRP, Dynamic Routing: OSPF, Rapid PVST 
+# Tecnologías: Inter-Vlan Routing, FHRP: HSRP, Dynamic Routing: OSPF, Rapid PVST, Etherchannel 
 # Herramientas: Vmware, Eve-NG, Wireshark, Microsoft Visio, Visual Studio Code
 
 <img width="546" alt="image" src="./Topologia EVE-NG/Topologia Eve-NG Lab03.png" /> 
 <img width="546" alt="image" src="./imagenes/Entorno-lab03.png" />
 
 ##  Descripción
-En este laboratorio configuramos una topología jerárquica tradicional conmutada, estructurada en sus 3 capas (Core, Distribución y Acceso).
+git 
 
 ## Objetivo: Configurar la red, comprobar el comportamiento del trafico en una topología jerárquica, configurar y hacer troubleshooting de los protocolos utilizados.
 
