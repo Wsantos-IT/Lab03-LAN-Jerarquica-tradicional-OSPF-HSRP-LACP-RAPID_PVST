@@ -1,0 +1,92 @@
+! --- Access & Security Basic Config Switch --- !
+hostname SWCore1
+no ip domain-lookup
+service password-encryption
+!
+banner motd # 
+========================================
+ AVISO: Acceso restringido y monitoreado
+========================================
+ #
+banner exec #
+ ------------------------------------------------------------
+[ ACCESO CONCEDIDO ]
+Dispositivo actual: $(hostname)
+Entorno: Eve-NG - Lab Win
+------------------------------------------------------------
+#
+!
+enable algorithm-type scrypt secret ciscoenpa55
+!
+! --- Admin User --- !
+username admin privilege 15 algorithm-type scrypt secret ciscoadminpa55
+!
+! --- Remote Access --- !
+ip domain-name winlab
+ip ssh version 2
+crypto key generate rsa general-keys modulus 2048
+!
+line vty 0 15
+exec-timeout 5 0
+logging synchronous
+login local
+transport input ssh
+exit
+!
+! --- Console ---- !
+line con 0
+exec-timeout 5 0
+logging synchronous
+login local
+exit
+!
+! --- Network Discovery --- !
+lldp run
+!
+! --- Etherchannel --- !
+interface range g0/0-1
+shut
+no switchport
+channel-group 1 mode on
+interface po 1
+description TO_SWCORE2_Po1
+ip address 10.255.255.13 255.255.255.252
+exit
+interface range g0/0-1
+description Po1_channelgroup
+no shut
+exit
+!
+! --- Routing --- !
+ip routing
+!
+interface loopback 0
+ip address 10.255.255.1 255.255.255.255
+exit
+interface g0/2
+description DOWNLINK_TO_SWDistr1_G0/0
+no switchport
+ip address 10.255.255.21 255.255.255.252
+interface g0/3
+description DOWNLINK_TO_SWDistr2_G0/1
+no switchport
+ip address 10.255.255.25 255.255.255.252
+!
+router ospf 1
+network 10.255.255.1 0.0.0.0 area 0
+network 10.255.255.12 0.0.0.3 area 0
+network 10.255.255.20 0.0.0.3 area 0
+network 10.255.255.24 0.0.0.3 area 0
+exit
+! --- Disabling Unused Ports --- !
+interface range g1/0-3
+description UNUSED_PORTS
+shut
+end
+!
+write
+!
+
+
+
+
