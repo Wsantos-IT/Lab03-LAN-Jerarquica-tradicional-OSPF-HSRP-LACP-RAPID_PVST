@@ -3,11 +3,10 @@
 # Tecnologías: Inter-Vlan Routing, FHRP: HSRP, Dynamic Routing: OSPF, Rapid PVST, Etherchannel 
 # Herramientas: Vmware, Eve-NG, Wireshark, Microsoft Visio, Visual Studio Code
 
-<img width="546" alt="image" src="./Topologia EVE-NG/Topologia Eve-NG Lab03.png" /> 
-<img width="546" alt="image" src="./imagenes/Entorno-lab03.png" />
+<img width="646" alt="image" src="./Topologia EVE-NG/Topologia Eve-NG Lab03.png" /> 
+<img width="646" alt="image" src="./imagenes/Entorno-lab03.png" />
 
 ##  Descripción
-git 
 
 ## Objetivo: Configurar la red, comprobar el comportamiento del trafico en una topología jerárquica, configurar y hacer troubleshooting de los protocolos utilizados.
 
@@ -32,7 +31,7 @@ Protocolos y Tecnologías trabajadas: Inter-Vlan Routing, FHRP: HSRP, Dynamic Ro
 ##  Topología de la Red
 Microsoft Visio
 
-<img width="546" alt="image" src="./Topologia Logica/Topologia Logica Lab03.png" />
+<img width="746" alt="image" src="./Topologia Logica/Topologia Logica Lab03.png" />
 
 
 ###  Tabla de Direccionamiento 
