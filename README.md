@@ -82,12 +82,12 @@ Las configuraciones completas de cada dispositivo están disponibles en la carpe
 
 |Dispositivo|Archivo|Descripción|
 |:----|:----|:----|
-|SWAccess1|[Config-SWaccess1.ios](./configuraciones/Config-SWaccess1.ios)|Config Completa|
-|SWAccess2|[Config-SWaccess2.ios](./configuraciones/Config-SWaccess2.ios)|Config Completa|
-|SWDistr1|[Config-SWDistr1.ios](./configuraciones/Config-SWDistr1.ios)|Config Completa|
-|SWDistr2|[Config-SWDistr2.ios](./configuraciones/Config-SWDistr2.ios)|Config Completa|
-|SWCore1|[Config-SWCore1.ios](./configuraciones/Config-SWCore1.ios)|Config Completa|
-|SWCore2|[Config-SWCore2.ios](./configuraciones/Config-SWCore2.ios)|Config Completa|
+|SWAccess1|[Config-SWaccess1.ios](./Configuraciones/Config-SWaccess1.ios)|Config Completa|
+|SWAccess2|[Config-SWaccess2.ios](./Configuraciones/Config-SWaccess2.ios)|Config Completa|
+|SWDistr1|[Config-SWDistr1.ios](./Configuraciones/Config-SWDistr1.ios)|Config Completa|
+|SWDistr2|[Config-SWDistr2.ios](./Configuraciones/Config-SWDistr2.ios)|Config Completa|
+|SWCore1|[Config-SWCore1.ios](./Configuraciones/Config-SWCore1.ios)|Config Completa|
+|SWCore2|[Config-SWCore2.ios](./Configuraciones/Config-SWCore2.ios)|Config Completa|
 
 ###  Pruebas y Verificación
 
