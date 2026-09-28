@@ -82,8 +82,8 @@ Las configuraciones completas de cada dispositivo están disponibles en la carpe
 
 |Dispositivo|Archivo|Descripción|
 |:----|:----|:----|
-|SWAccess1|[Config-SWaccess1.ios](./Configuraciones/Config-SWaccess1.ios)|Config Completa|
-|SWAccess2|[Config-SWaccess2.ios](./Configuraciones/Config-SWaccess2.ios)|Config Completa|
+|SWAccess1|[Config-SWaccess1.ios](./Configuraciones/Config-SWAccess1.ios)|Config Completa|
+|SWAccess2|[Config-SWaccess2.ios](./Configuraciones/Config-SWAccess2.ios)|Config Completa|
 |SWDistr1|[Config-SWDistr1.ios](./Configuraciones/Config-SWDistr1.ios)|Config Completa|
 |SWDistr2|[Config-SWDistr2.ios](./Configuraciones/Config-SWDistr2.ios)|Config Completa|
 |SWCore1|[Config-SWCore1.ios](./Configuraciones/Config-SWCore1.ios)|Config Completa|
