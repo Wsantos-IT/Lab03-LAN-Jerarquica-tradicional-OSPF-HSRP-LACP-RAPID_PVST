@@ -24,6 +24,13 @@ Protocolos y Tecnologías trabajadas: Inter-Vlan Routing, FHRP: HSRP, Dynamic Ro
 * Etherchannel: Empezamos por las interfaces físicas a agrupar en un portchannel y las apagamos primero, si el etherchannel es de L3 aplicamos no switchport , y luego aplicamos channel-group, de esta forma el Port Channel habrá recibido la configuración de las interfaces físicas y habremos evitado bucles en la creación de este.
 * Las prioridades del protocolo HSRP o VRRP deben coincidir con el protocolo STP si estamos balanceando las VLANS, es decir ejemplo: si para SW1 esta activo el VIP del HSRP para vlan 10, entonces ese SW1 debe ser root primary STP para esa vlan.
 
+* ¡Importante! : Por incompatibilidad y bugs de las imagenes vIOSL2 que estamos utilizando debimos configurar el comando standby use-bia en las interfaces vlan de usuarios con HSRP, ya que la IP virtual no la procesaba asi que con este comando usara la "MAC física" del puerto del dispositivo:
+
+```
+SWDistr1(config-if)#standby use-bia
+SWDistr2(config-if)#standby use-bia
+```
+
 
 
 ---
